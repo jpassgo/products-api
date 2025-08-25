@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: products-api
+  datasource:
+    url: jdbc:postgresql://localhost:5433/products
+    username: jeffpascoe
+    password:
+    driver-class-name: org.postgresql.Driver
+
+liquibase:
+  change-log: classpath:db/changelog/db.changelog-master.yaml
+  enabled: true
+  drop-first: false
+
+jpa:
+  hibernate:
+    ddl-auto: validate
+  properties:
+    hibernate:
+      format_sql: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
