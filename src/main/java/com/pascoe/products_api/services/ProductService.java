@@ -1,6 +1,6 @@
 package com.pascoe.products_api.services;
 
-import com.pascoe.products_api.Exceptions.ProductNotFoundException;
+import com.pascoe.products_api.exceptions.ProductNotFoundException;
 import com.pascoe.products_api.models.Product;
 import com.pascoe.products_api.repositories.ProductRepository;
 import org.springframework.stereotype.Service;
