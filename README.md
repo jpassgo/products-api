@@ -31,7 +31,7 @@ Response: Product (contains only a String field Name)
 ```declarative
 Purpose: Get a single product by name
 Endpoint: /products
-Method: POST 
+Method: GET 
 Request Body: Product 
 Response: Product (contains only a String field Name)
 ```
