@@ -15,3 +15,31 @@ spring:
     password:
     driver-class-name: org.postgresql.Driver
 ```
+
+## Usage
+
+### Endpoints
+
+There are several endpoints exposed by this API:
+```declarative
+Purpose: Get all products
+Endpoint: /products
+Method: GET
+Response: Product (contains only a String field Name)
+```
+
+```declarative
+Purpose: Get a single product by name
+Endpoint: /products
+Method: POST 
+Request Body: Product 
+Response: Product (contains only a String field Name)
+```
+
+```declarative
+Purpose: Save a new Product to the database 
+Endpoint: /products
+Method: POST 
+Request Body: Product 
+Response: Product (contains only a String field Name)
+```
